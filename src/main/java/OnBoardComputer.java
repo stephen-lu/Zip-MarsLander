@@ -7,7 +7,7 @@ public class OnBoardComputer implements BurnStream {
         int v = status.Velocity;
 
         while (true) {
-            if (a < 10000 && v > 100) {
+            if (a <= 10000 && v > 100) {
                 burn = 200;
             } else if (a < 200 && v > 50) {
                 burn = 150;
