@@ -5,9 +5,9 @@ public class BurnInputStream implements BurnStream {
 
     @Override
     public int getNextBurn(DescentEvent status) {
-        String[] tokens = scanner.nextLine().split(" ");
-        if (tokens.length > 0) {
-            while (true) {
+        while (true) {
+            String[] tokens = scanner.nextLine().split(" ");
+            if (tokens.length > 0) {
                 try {
                     int burn = Integer.parseInt(tokens[0]);
                     return burn;
@@ -16,6 +16,5 @@ public class BurnInputStream implements BurnStream {
                 }
             }
         }
-        return 0;
     }
 }
