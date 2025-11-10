@@ -4,6 +4,7 @@ public class Simulation {
     public Simulation(Vehicle v) {
         this.vehicle = v;
     }
+    
     // Mars Simulation Source Code.
     static String version = "2.0"; /* The Version of the program */
 
@@ -40,8 +41,8 @@ public class Simulation {
 
 
     public void printString(String string) {
-// print long strings with new lines the them.
-    String[] a = string.split("\r?\n");
+        // print long strings with new lines the them.
+        String[] a = string.split("\r?\n");
         for (String s : a) {
             System.out.println(s);
         }
